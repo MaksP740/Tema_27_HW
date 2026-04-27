@@ -80,8 +80,7 @@ void Passport::showPassport() const {
 
     cout << "Серія              : " << seria << "\n";
     cout << "Номер              : " << number << "\n";
-    cout << "ПІБ                : "
-         << lastname << " " << firstname << " " << middlename << "\n";
+    cout << "ПІБ                : " << lastname << " " << firstname << " " << middlename << "\n";
 
     cout << "Дата народження    : " << dateBirth << "\n";
     cout << "Місце народження   : " << placeBirth << "\n";
