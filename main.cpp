@@ -1,6 +1,8 @@
 #include <iostream>
 
+#include "ForeignPassport.h"
 #include "Passport.h"
+#include "Visa.h"
 
 int main() {
 
@@ -12,15 +14,19 @@ int main() {
     "м. Київ, вул. Хрещатик, 1"
     );
 
-    Passport passport2(
-        "BB", 654321, "Петренко", "Олег", "Васильович",
-        "15.05.1998", "Львів",
-        "10.06.2019",
-        "Львівський РВ ДМС України",
-        "м. Львів, вул. Шевченка, 25"
-    );
     passport1.showPassport();
-    passport2.showPassport();
+
+    ForeignPassport passport2(
+    "FP", 987654,
+    "Ivanenko", "Ivan",
+    "01.01.2000", "Kyiv",
+    "01.01.2022",
+    "State Migration Service of Ukraine"
+);
+
+    passport2.addVisa(Visa("Італія", "05.05.2024", "05.11.2026"));
+    passport2.addVisa(Visa("Німечинна", "10.04.2024", "10.10.2026"));
+    passport2.showForeignPassport();
 
 
 

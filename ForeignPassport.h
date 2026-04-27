@@ -12,17 +12,19 @@ using namespace std;
 #include <iostream>
 
 class ForeignPassport: public Passport {
+
 private:
     vector<Visa> VisaList;
+
 public:
     ForeignPassport();
     ForeignPassport(string seria, int number, string lastname,
              string firstname, string DateBirth, string PlaceBirth,
              string Passport_issue_date, string Who_issued_it);
 
-    void addVisa(Visa & VisaList);
+    void addVisa(const Visa& visa);
 
-    void showVisaList() const;
+    void showForeignPassport() const;
 };
 
 
