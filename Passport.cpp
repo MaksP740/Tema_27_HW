@@ -33,7 +33,7 @@ Passport::Passport(string seria, int number, string lastname,
     this->Registration = Registration;
 }
 
-string Passport::setRegistration() {
+string Passport::getRegistration() const {
     return Registration;
 }
 

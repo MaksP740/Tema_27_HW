@@ -29,17 +29,16 @@ public:
              string firstname, string middlename, string DateBirth, string PlaceBirth,
              string Passport_issue_date, string Who_issued_it, string Registration);
 
-    string setRegistration();
-
-    string getmiddlename() const;
     string getSeria()const;
     int getNumber()const;
     string getLastname()const;
     string getFirstname()const;
+    string getmiddlename() const;
     string getDateBirth()const;
     string getPlaceBirth()const;
     string getPassportIssue()const;
     string getWhoIssue()const;
+    string getRegistration()const;
 
     void showPassport() const;
 
