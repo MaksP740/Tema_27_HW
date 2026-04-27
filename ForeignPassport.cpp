@@ -29,7 +29,7 @@ ForeignPassport::ForeignPassport(string seria, int number, string lastname, stri
 }
 
 void ForeignPassport::addVisa(const Visa &visa) {
-    VisaList.push_back(visa);
+    visaList.push_back(visa);
 }
 
 void ForeignPassport::showForeignPassport() const {
@@ -51,7 +51,7 @@ void ForeignPassport::showForeignPassport() const {
     cout << "Дата видачі        : " << passportIssue << endl;
     cout << "Ким виданий        : " << whoIssue << endl;
 
-    for (const Visa &visa : VisaList) {
+    for (const Visa &visa : visaList) {
         visa.showVisa();
     }
     cout << "\n=====================================================\n";

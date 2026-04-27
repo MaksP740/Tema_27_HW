@@ -14,7 +14,7 @@ using namespace std;
 class ForeignPassport: public Passport {
 
 private:
-    vector<Visa> VisaList;
+    vector<Visa> visaList;
 
 public:
     ForeignPassport();
